@@ -26,7 +26,7 @@
 
 <section id="tr" lang="tr">
 <h1>Rastgele – Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
-<p class="meta">Yürürlük tarihi: 4 Ekim 2026</p>
+<p class="meta">Yürürlük tarihi: 1.2 sürümüyle birlikte (Kasım 2026)</p>
 
 <p>Bu metin, Rastgele iOS uygulamasını (“Uygulama”) kullanırken kişisel verilerinin nasıl işlendiğini, 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) kapsamında açıklar.</p>
 
@@ -35,9 +35,11 @@
 
 <h2>2. Kısaca</h2>
 <ul>
-  <li>Hesap açman gerekmez; adını, e-postanı veya telefonunu istemiyoruz.</li>
+  <li>Tahminler, harita ve balık rehberi için hesap gerekmez.</li>
+  <li>Yalnızca “Akış” bölümünde av paylaşmak, yorum yapmak veya beğenmek istersen Apple ile Giriş yaparak bir hesap açarsın. Senden yalnızca bir takma ad isteriz; Apple adını ve e-postanı bize iletmez (e-postanı paylaşmayı seçersen yalnızca hesabın için saklanır).</li>
   <li>Reklam, analiz ya da takip aracı kullanmıyoruz. Verilerini satmıyor, paylaşmıyoruz.</li>
-  <li>Konumunu kendi sunucumuza göndermiyor ve saklamıyoruz.</li>
+  <li>Anlık konumunu sunucumuza göndermiyoruz. Paylaşım yaptığında yalnızca paylaşımın konumu, yaklaşık 1 km'ye yuvarlanarak saklanır.</li>
+  <li>Hesabını uygulama içinden (Akış → Hesap → Hesabımı sil) istediğin an silebilirsin; tüm paylaşımların, fotoğrafların, yorumların ve beğenilerin kalıcı olarak silinir.</li>
 </ul>
 
 <h2>3. İşlenen veriler ve amaçları</h2>
@@ -63,18 +65,33 @@
     <td>Tercihlerini hatırlamak</td>
     <td>Yalnızca cihazında</td>
   </tr>
+  <tr>
+    <td><strong>Hesap</strong> (Apple'ın verdiği anonim kullanıcı kimliği, takma ad, varsa e-posta)</td>
+    <td>Akış'ta paylaşım, yorum ve beğeni yapabilmen</td>
+    <td>Sunucumuzda (Supabase, Frankfurt / AB). Hesabını silene kadar saklanır.</td>
+  </tr>
+  <tr>
+    <td><strong>Paylaşımlar</strong> (fotoğraf, balık türü, not, av noktası, yaklaşık konum, “Şu an buradayım” bilgisi), <strong>yorumlar ve beğeniler</strong></td>
+    <td>Diğer balıkçıların görebileceği akışı oluşturmak</td>
+    <td>Sunucumuzda (Supabase, Frankfurt / AB). Herkese açıktır. Fotoğraflar yüklenmeden önce küçültülür ve içindeki konum (EXIF) bilgisi silinir. Konum ~1 km'ye yuvarlanır.</td>
+  </tr>
+  <tr>
+    <td><strong>Şikâyet ve engellemeler</strong></td>
+    <td>Topluluğu uygunsuz içerikten korumak</td>
+    <td>Sunucumuzda. Şikâyetleri yalnızca biz görürüz; 3 farklı kullanıcının şikâyet ettiği içerik otomatik gizlenir ve 24 saat içinde incelenir. Engellediğin kişilerin içeriği sana gösterilmez.</td>
+  </tr>
 </table>
-<p>Uygulama internette yalnızca Apple'ın servisleriyle (Haritalar, WeatherKit, App Store) iletişim kurar. Bu sırada Apple, teknik zorunluluk gereği cihazının IP adresini görebilir; Apple'ın <a href="https://www.apple.com/tr/legal/privacy/">gizlilik politikası</a> geçerlidir. Dalga yüksekliği ve su sıcaklığı cihazında hesaplanır.</p>
+<p>Uygulama internette Apple'ın servisleriyle (Haritalar, WeatherKit, App Store) ve Akış için kendi sunucumuzla (Supabase) iletişim kurar. Bu sırada Apple, teknik zorunluluk gereği cihazının IP adresini görebilir; Apple'ın <a href="https://www.apple.com/tr/legal/privacy/">gizlilik politikası</a> geçerlidir. Dalga yüksekliği ve su sıcaklığı cihazında hesaplanır.</p>
 <p>Malzeme listesini paylaşmayı seçersen, metin yalnızca seçtiğin uygulamaya (ör. WhatsApp) senin isteğinle aktarılır.</p>
 
 <h2>4. Hukuki sebep</h2>
-<p>Konum verisi, ancak iOS üzerinden verdiğin izinle işlenir (KVKK m.5/1 açık rıza). İznini istediğin zaman <em>Ayarlar → Gizlilik ve Güvenlik → Konum Servisleri → Rastgele</em> yolundan geri alabilirsin; uygulama konum olmadan da çalışır, yalnızca rota özelliği kapanır. Abonelik ve ayar verileri, hizmetin sunulması için zorunlu olduğundan işlenir (KVKK m.5/2-c).</p>
+<p>Konum verisi, ancak iOS üzerinden verdiğin izinle işlenir (KVKK m.5/1 açık rıza). İznini istediğin zaman <em>Ayarlar → Gizlilik ve Güvenlik → Konum Servisleri → Rastgele</em> yolundan geri alabilirsin; uygulama konum olmadan da çalışır, yalnızca rota özelliği kapanır. Abonelik, ayar ve Akış hesabı verileri, senin istediğin hizmetin sunulması için zorunlu olduğundan işlenir (KVKK m.5/2-c).</p>
 
 <h2>5. Yurt dışına aktarım</h2>
-<p>Rota, yer araması ve hava tahmini için Apple'a gönderilen veriler, Apple'ın yurt dışındaki sunucularında işlenebilir. Bu aktarım yalnızca senin kullandığın özelliğin çalışması için ve KVKK m.9'a uygun olarak yapılır.</p>
+<p>Rota, yer araması ve hava tahmini için Apple'a gönderilen veriler, Apple'ın yurt dışındaki sunucularında işlenebilir. Akış verileri AB'de (Almanya) bulunan Supabase sunucularında saklanır. Bu aktarımlar yalnızca senin kullandığın özelliğin çalışması için ve KVKK m.9'a uygun olarak yapılır.</p>
 
 <h2>6. Saklama süresi</h2>
-<p>Kendi sunucumuz olmadığı için senin hakkında veri saklamıyoruz. Cihazındaki ayarlar, uygulamayı sildiğinde silinir.</p>
+<p>Akış hesabın ve içeriğin, hesabını silene kadar saklanır; silme işlemi anında ve kalıcıdır. Gizlenen içerik ve şikâyet kayıtları da hesapla birlikte silinir. Akış'ı kullanmazsan senin hakkında sunucumuzda hiçbir veri tutulmaz. Cihazındaki ayarlar, uygulamayı sildiğinde silinir.</p>
 
 <h2>7. Çocuklar</h2>
 <p>Uygulama 13 yaş altındaki çocuklara yönelik değildir ve bilerek çocuklardan veri toplamaz.</p>
@@ -90,7 +107,7 @@
 
 <section id="en" lang="en">
 <h1>Rastgele – Privacy Policy</h1>
-<p class="meta">Effective date: October 4, 2026</p>
+<p class="meta">Effective date: with version 1.2 (November 2026)</p>
 
 <p>This policy explains how the Rastgele iOS app (“App”) handles your data.</p>
 
@@ -99,9 +116,11 @@
 
 <h2>2. In short</h2>
 <ul>
-  <li>No account is required; we don't ask for your name, email or phone number.</li>
+  <li>No account is needed for forecasts, the map or the fish guide.</li>
+  <li>Only if you want to post catches, comment or like in the “Catches” feed do you create an account with Sign in with Apple. We only ask for a nickname; Apple does not share your name with us, and your email only if you choose to share it.</li>
   <li>We use no advertising, analytics or tracking tools. We don't sell or share your data.</li>
-  <li>Your location is never sent to or stored on our servers.</li>
+  <li>Your live location is never sent to our servers. When you post, only the post's location is stored, rounded to about 1 km.</li>
+  <li>You can delete your account in the app at any time (Catches → Account → Delete my account); all your posts, photos, comments and likes are permanently removed.</li>
 </ul>
 
 <h2>3. Data we process</h2>
@@ -127,15 +146,30 @@
     <td>Remembering your preferences</td>
     <td>On your device only</td>
   </tr>
+  <tr>
+    <td><strong>Account</strong> (anonymous user ID from Apple, nickname, email if shared)</td>
+    <td>Letting you post, comment and like in the feed</td>
+    <td>On our server (Supabase, Frankfurt / EU), until you delete your account.</td>
+  </tr>
+  <tr>
+    <td><strong>Posts</strong> (photo, species, note, spot, approximate location, “I'm here now” flag), <strong>comments and likes</strong></td>
+    <td>Building the feed other anglers can see</td>
+    <td>On our server (Supabase, Frankfurt / EU). Public. Photos are resized and their location (EXIF) data is removed before upload; location is rounded to ~1 km.</td>
+  </tr>
+  <tr>
+    <td><strong>Reports and blocks</strong></td>
+    <td>Protecting the community from objectionable content</td>
+    <td>On our server. Only we see reports; content reported by 3 different users is hidden automatically and reviewed within 24 hours. Content from users you block is not shown to you.</td>
+  </tr>
 </table>
-<p>The App only connects to Apple services (Maps, WeatherKit, App Store). Apple may technically see your device's IP address; Apple's <a href="https://www.apple.com/legal/privacy/">privacy policy</a> applies. Wave height and water temperature are calculated on your device.</p>
+<p>The App connects to Apple services (Maps, WeatherKit, App Store) and, for the feed, our own server (Supabase). Apple may technically see your device's IP address; Apple's <a href="https://www.apple.com/legal/privacy/">privacy policy</a> applies. Wave height and water temperature are calculated on your device.</p>
 <p>If you choose to share your tackle list, the text goes only to the app you pick (e.g. WhatsApp), at your request.</p>
 
 <h2>4. Your choices</h2>
 <p>You can revoke location access at any time in <em>Settings → Privacy &amp; Security → Location Services → Rastgele</em>. The App keeps working without it; only routing is disabled.</p>
 
 <h2>5. Retention</h2>
-<p>We don't run our own servers, so we keep no data about you. On-device settings are removed when you delete the App.</p>
+<p>Your feed account and content are kept until you delete your account; deletion is immediate and permanent. If you don't use the feed, we keep no data about you. On-device settings are removed when you delete the App.</p>
 
 <h2>6. Children</h2>
 <p>The App is not directed at children under 13 and does not knowingly collect data from them.</p>
